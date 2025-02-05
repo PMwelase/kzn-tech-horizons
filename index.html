@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KZN Tech Horizons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="home" class="vh-100">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/KZNTH-Home-24.svg" alt="KZNTH Logo" class="img-fluid" style="height: 25px;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="d-flex align-items-center h-100 text-center text-white">
+            <div class="container">
+                <div class="row h-100 align-items-center">
+                    <!-- Left Side: Logo and Text Below -->
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+                        <img src="images/KZNTH-25.svg" alt="KZNTH Logo" class="img-fluid" style="max-width: 300px;">
+                        <div class="mt-3">
+                            <h3 class="logo-text m-0">Empowering Innovation.</h3>
+                            <h3 class="logo-text m-0">Connecting Communities.</h3>
+                        </div>
+                    </div>
+        
+                    <!-- Right Side: Countdown + Button -->
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="right-text"> 
+                            <h2 id="title">Vision 2025:</h2>
+                            <h4 id="subtitle">Refocusing Tech Horizons</h4>
+                            <h3 id="date">22 Feb 2025</h3>
+                        </div>
+                        <div id="countdown" class="text-center display-4"></div>
+                        <a href="#signup" class="btn btn-primary mt-3">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </section>
+
+    
+    
+    
+
+    <section id="about" class="container py-5">
+        <h2 class="text-center">About Us</h2>
+        <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/mission.jpg" class="d-block w-100" alt="Mission">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Our Mission</h5>
+                        <p>Empowering Innovation. Connecting Communities.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/vision.jpg" class="d-block w-100" alt="Vision">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Our Vision</h5>
+                        <p>Creating a sustainable future through tech innovation.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/team.jpg" class="d-block w-100" alt="Team">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Meet Our Team</h5>
+                        <p>Dedicated professionals driving impact.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="volunteer" class="container py-5">
+        <h2 class="text-center">Volunteer with Us</h2>
+        <form id="volunteerForm" class="text-center">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="First Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Last Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="mb-3">
+                <select class="form-control" required>
+                    <option value="">Select a Volunteer Role</option>
+                    <option value="mentor">Mentor</option>
+                    <option value="developer">Developer</option>
+                    <option value="event-organizer">Event Organizer</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <footer class="text-center p-3 bg-dark text-white">
+        <p>Follow us on social media:</p>
+        <a href="#" class="text-white me-2">LinkedIn</a>
+        <a href="#" class="text-white me-2">Instagram</a>
+        <a href="#" class="text-white">X</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
