@@ -56,6 +56,14 @@ body {
     mix-blend-mode: normal;
 }
 
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.2); /* Zoom effect */
+    color: #FFD700; 
+}
 
 .circle-mask {
     -webkit-mask: radial-gradient(
@@ -89,8 +97,10 @@ body {
 
 .logo-text {
     font-family: 'Montserrat';
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 800;
+    padding: 0.2rem;
+    text-align: justify;
 }
 
 #title {

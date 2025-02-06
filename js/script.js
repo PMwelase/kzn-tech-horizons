@@ -7,6 +7,9 @@
 //     window.location.href = "mailto:kzntechhorizons@gmail.com?subject=Volunteer Sign-up&body=Hello, I'd like to volunteer!";
 // });
 
+
+// COUNTDOWN
+
 document.addEventListener("DOMContentLoaded", function () {
     function startCountdown(eventDate) {
         function updateCountdown() {
@@ -31,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const paddedMinutes = minutes < 10 ? "0" + minutes : minutes;
             const paddedSeconds = seconds < 10 ? "0" + seconds : seconds;
 
-            countdownElement.innerHTML = `${paddedDays}:${paddedHours}:${paddedMinutes}:${paddedSeconds}s`;
+            countdownElement.innerHTML = `${paddedDays}d ${paddedHours}h ${paddedMinutes}m ${paddedSeconds}s`;
         }
 
         updateCountdown();
@@ -42,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     startCountdown(eventDate);
 });
 
+
+// SUN CURSOR
 
 document.addEventListener("DOMContentLoaded", function() {
     const homeSection = document.getElementById('home');
