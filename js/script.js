@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     homeSection.addEventListener('mouseleave', function() {
-        overlay.style.opacity = '1';
+        overlay.style.opacity = '0.8';
     });
 });
 

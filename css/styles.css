@@ -26,7 +26,7 @@ body {
     background-color: black;
     z-index: 1;
     pointer-events: none;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 #home .navbar {
@@ -35,7 +35,7 @@ body {
     left: 0;
     right: 0;
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 1); 
     backdrop-filter: blur(5px);
 }
 
@@ -56,13 +56,18 @@ body {
     mix-blend-mode: normal;
 }
 
+#home #date {
+    color: #EEE619;
+    font-weight: 300;
+}
+
 .navbar-nav .nav-link {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
     transform: scale(1.2); /* Zoom effect */
-    color: #FFD700; 
+    /* color: #EEE619;  */
 }
 
 .circle-mask {
@@ -100,6 +105,7 @@ body {
     font-size: 2rem;
     font-weight: 800;
     padding: 0.2rem;
+    padding-top: 0.5rem;
     text-align: justify;
 }
 
@@ -113,7 +119,38 @@ body {
     font-weight: 600;
 }
 
-#date {
-    font-size: 1.2rem;
-    color: #EEE619; /* Why isn't this yellow??? */
+
+h5 {
+    color: black;
 }
+
+.socials {
+    text-decoration: none;
+}
+
+.socials img {
+    height: 2rem;
+    margin: 1.2rem;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socials img:hover {
+    transform: scale(1.5);
+}
+
+.custom-btn {
+    background-color: #ff6600 !important; /* Custom orange */
+    color: white !important;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease, color 0.3s ease;
+    transform: scale(1); /* Ensures smooth return */
+}
+
+.custom-btn:hover {
+    background-color: #294DF0 !important; /* Darker shade on hover */
+    transform: scale(1.2);
+}
+

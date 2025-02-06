@@ -4,40 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KZN Tech Horizons</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section id="home" class="vh-100">
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/KZNTH-Home-24.svg" alt="KZNTH Logo" class="img-fluid" style="height: 25px;">
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/KZNTH-Home-24.svg" alt="KZNTH Logo" class="img-fluid" style="height: 25px;">
+            </a>
     
+            <!-- Navbar Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!-- Centered Navigation Links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                </ul>
+    
+                <!-- Right-aligned "Contact Us" -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link ms-lg-3" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <section id="home" class="vh-100">
+        
         <div class="d-flex align-items-center h-100 text-center text-white">
             <div class="container">
                 <div class="row h-100 align-items-center">
                     <!-- Left Side: Logo and Text Below -->
                     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-                        <img src="images/KZNTH-25.svg" alt="KZNTH Logo" class="img-fluid" style="max-width: 75%;">
+                        <img src="images/KZNTH-Home-24.svg" alt="KZNTH Logo" class="img-fluid" style="max-width: 75%;">
                         <div class="mt-3">
                             <h2 class="logo-text m-0">Empowering Innovation.</h3>
                             <h2 class="logo-text m-0">Connecting Communities.</h3>
@@ -52,7 +62,7 @@
                             <h3 id="date">22 Feb 2025</h3>
                         </div>
                         <div id="countdown" class="text-center display-4"></div>
-                        <a href="#signup" class="btn btn-primary mt-3">RSVP NOW</a>
+                        <a href="#signup" class="btn custom-btn mt-3">RSVP NOW</a>
                     </div>
                 </div>
             </div>
@@ -60,59 +70,50 @@
         
     </section>
 
-    
-    
-    
 
     <section id="about" class="container py-5">
-
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/KZNTH-Home-24.svg" alt="KZNTH Logo" class="img-fluid" style="height: 25px;">
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <h2 class="text-center">About Us</h2>
+        <h2 class="text-center mb-4">About Us</h2>
+    
         <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+                <!-- Mission Slide -->
                 <div class="carousel-item active">
-                    <img src="assets/mission.jpg" class="d-block w-100" alt="Mission">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Our Mission</h5>
-                        <p>Empowering Innovation. Connecting Communities.</p>
+                    <div class="row align-items-center">
+                        <!-- Left Side: Image -->
+                        <div class="col-md-6">
+                            <img src="images/innovation-01.svg" class="img-fluid rounded shadow-lg" alt="Mission">
+                        </div>
+                        <!-- Right Side: Text -->
+                        <div class="col-md-6">
+                            <h3 class="fw-bold">Mission</h3>
+                            <p class="text-dark">
+                                We are a dedicated community focused on innovation and technological advancement 
+                                in KwaZulu-Natal. Our mission is to foster collaboration and empower individuals to drive change.
+                            </p>
+                        </div>
                     </div>
                 </div>
+    
+                <!-- Vision Slide -->
                 <div class="carousel-item">
-                    <img src="assets/vision.jpg" class="d-block w-100" alt="Vision">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Our Vision</h5>
-                        <p>Creating a sustainable future through tech innovation.</p>
+                    <div class="row align-items-center">
+                        <!-- Left Side: Image -->
+                        <div class="col-md-6">
+                            <img src="images/communities-01.svg" class="img-fluid rounded shadow-lg" alt="Vision">
+                        </div>
+                        <!-- Right Side: Text -->
+                        <div class="col-md-6">
+                            <h3 class="fw-bold">Vision</h3>
+                            <p class="text-dark">
+                                To position KZN as a competitive force in the tech industry by 
+                                fostering collaboration, supporting local startups, and driving innovation 
+                                towards making Durban a smart city by 2030.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/team.jpg" class="d-block w-100" alt="Team">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Meet Our Team</h5>
-                        <p>Dedicated professionals driving impact.</p>
-                    </div>
-                </div>
-            </div>
+    
+            <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -121,7 +122,8 @@
             </button>
         </div>
     </section>
-
+    
+    
     <section id="volunteer" class="container py-5">
         <h2 class="text-center">Volunteer with Us</h2>
         <form id="volunteerForm" class="text-center">
@@ -135,23 +137,40 @@
                 <input type="email" class="form-control" placeholder="Email Address" required>
             </div>
             <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <!-- <div class="mb-3">
                 <select class="form-control" required>
                     <option value="">Select a Volunteer Role</option>
                     <option value="mentor">Mentor</option>
                     <option value="developer">Developer</option>
-                    <option value="event-organizer">Event Organizer</option>
+                    <option value="tech">Technical Support</option>
+                    <option value="venue">Venue</option>
                 </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            </div> -->
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
         </form>
     </section>
 
-    <footer class="text-center p-3 bg-dark text-white">
-        <p>Follow us on social media:</p>
-        <a href="#" class="text-white me-2">LinkedIn</a>
-        <a href="#" class="text-white me-2">Instagram</a>
-        <a href="#" class="text-white">X</a>
+    <footer class="text-center p-3 bg-dark text-white" id="contact">
+        <p>Get in touch:</p>
+        <a href="https://www.linkedin.com/company/kzn-tech-horizons" class="socials">
+            <img src="images/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/kzntechhorizons/" class="socials">
+            <img src="images/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" class="socials">
+            <img src="images/twitter.svg" alt="X" >
+        </a>
+        <a href="mailto:kzntechhorizons@gmail.com" class="socials">
+            <img src="images/email-05.svg" alt="email">
+        </a>
+        <a href="https://chat.whatsapp.com/K37Xovft04p48dSKmyvs6d" class="socials" >
+            <img src="images/whatsapp.svg" alt="whatsapp">
+        </a>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
