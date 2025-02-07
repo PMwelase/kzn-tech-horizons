@@ -22,6 +22,8 @@ body {
     }
 }
 
+.fade-in-image { animation: fadeIn 5s; }
+
 #home .black-overlay {
     position: absolute; 
     top: 0;
@@ -116,6 +118,24 @@ body {
     padding-top: 0.5rem;
     text-align: center;
 }
+
+.fade-in-image {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 #title {
     font-size: 300%;

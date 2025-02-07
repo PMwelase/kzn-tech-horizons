@@ -30,7 +30,7 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#who-we-are">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#volunteer">Partner</a></li>
                     <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
                 </ul>
     
@@ -50,8 +50,8 @@
                 <div class="row h-100 align-items-center">
                     <!-- Left Side: Logo and Text Below -->
                     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-                        <img src="images/KZNTH-Home-24.svg" alt="KZNTH Logo" class="img-fluid" style="max-width: 75%;">
-                        <div class="mt-3">
+                        <img src="images/KZNTH-Home-24.svg" alt="KZNTH Logo" class="img-fluid fade-in-image" style="max-width: 75%;">
+                        <div class="mt-3 fade-in-image">
                             <h2 class="logo-text m-0">Empowering Innovation</h3>
                             <h2 class="logo-text m-0">Connecting Communities</h3>
                         </div>
@@ -96,6 +96,7 @@
             </div>
         </div>
     </section>
+    
     
 
 
@@ -254,35 +255,52 @@
     <!-- Team -->
 
     
+    <div class="container py-5">
+        <div class="row">
+            <!-- Join Our Community Section -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <section id="community" class="p-4 border rounded shadow">
+                    <h2 class="text-center" style="padding: 4rem;">Join Our Community</h2>
+                    <p class="text-center">
+                        Connect with fellow tech enthusiasts, professionals, and innovators in KZN! Join our Tech Horizon WhatsApp group to stay updated on the latest tech news, events, and opportunities in the region. Share your ideas, collaborate on projects, and help shape the future of tech in KZN! 
+                    </p>
+                    <div class="text-center">
+                        <a href="https://chat.whatsapp.com/K37Xovft04p48dSKmyvs6d" class="btn btn-success" target="_blank" style="margin: 3rem;">Join WhatsApp Community</a>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Volunteer or Sponsor Section -->
+            <div class="col-md-6">
+                <section id="volunteer-sponsor" class="p-4 border rounded shadow">
+                    <h2 class="text-center">Partner With Us</h2>
+                    <form id="volunteerForm" class="text-center">
+                        <div class="mb-3">
+                            <select class="form-control" required>
+                                <option value="volunteer">Volunteer</option>
+                                <option value="sponsor">Sponsor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Partner</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
     
     
-    <section id="volunteer" class="container py-5">
-        <h2 class="text-center">Volunteer with Us</h2>
-        <form id="volunteerForm" class="text-center">
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="First Name" required>
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Last Name" required>
-            </div>
-            <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email Address" required>
-            </div>
-            <div class="mb-3">
-                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-            <!-- <div class="mb-3">
-                <select class="form-control" required>
-                    <option value="">Select a Volunteer Role</option>
-                    <option value="mentor">Mentor</option>
-                    <option value="developer">Developer</option>
-                    <option value="tech">Technical Support</option>
-                    <option value="venue">Venue</option>
-                </select>
-            </div> -->
-            <button type="submit" class="btn btn-primary mt-3">Submit</button>
-        </form>
-    </section>
 
     <footer class="text-center p-3 bg-dark text-white" id="contact">
         <p>Get in touch:</p>
