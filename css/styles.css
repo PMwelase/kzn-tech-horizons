@@ -132,6 +132,99 @@ h5 {
     color: black;
 }
 
+#who-we-are {
+    margin-top: 4rem;
+}
+
+#who-we-are-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.who {
+    flex: 1;
+    font-size: 5rem;
+    text-align: right;
+    width: 100%;
+    padding-right: 8rem;
+}
+
+[data-animate] {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+[data-animate].active {
+    opacity: 1;
+}
+
+/* Slide-in animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-left.active {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-right.active {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+#who-we-are-right {
+    display: flex;
+    align-items: flex-start;
+}
+
+.typing-container {
+    text-align: left;
+    width: 100%;
+}
+
+.typing-text {
+    margin-bottom: 1.5rem;
+    min-height: 2em;
+    opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+    #who-we-are-left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .who {
+        padding-right: 0;
+    }
+
+    #who-we-are-right {
+        text-align: left;
+        margin-top: 2rem;
+    }
+}
+
+
+
 .socials {
     text-decoration: none;
 }
@@ -148,9 +241,9 @@ h5 {
 }
 
 .custom-btn {
-    background-color: #ff6600 !important; 
+    background-color: #294DF0 !important; 
     color: white !important;
-    padding: 12px 24px;
+    padding: 12px 20px;
     font-weight: bold;
     border-radius: 8px;
     transition: background 0.3s ease-in-out, transform 0.3s ease, color 0.3s ease;
@@ -158,11 +251,123 @@ h5 {
 }
 
 .custom-btn:hover {
-    background-color: #294DF0 !important;
+    background-color: #123ACC !important;
     transform: scale(1.2);
 }
 
 #copyright {
     font-family: poppins; 
     padding-top: 0.5rem;
+}
+
+
+
+
+
+#team {
+    background: linear-gradient(rgba(0, 0, 0.0, 0.9), rgba(0, 0, 0, 1)), url('/images/team-02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.carousel-item {
+    padding: 20px 60px;
+}
+
+.card {
+    margin: 0 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    background: white;
+    position: relative;
+    padding-top: 60px; /* Space for raised image */
+    margin-top: 60px; /* Space for raised image */
+    min-height: 80%;
+}
+
+
+.card {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Zoom effect */
+    /* color: #EEE619;  */
+}
+
+.profile-img-wrapper {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: white;
+    padding: 3px; /* Creates a white border effect */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+}
+
+.card-body {
+    padding: 1.5rem 1rem 1rem;
+}
+
+.card-title {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    color: #6c757d;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.linkedin-link {
+    color: #0077b5;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.linkedin-link:hover {
+    color: #004471;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#teamCarousel:hover .carousel-control-prev,
+#teamCarousel:hover .carousel-control-next {
+    opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+@media (max-width: 767px) {
+    .carousel-item {
+        padding: 20px;
+    }
 }

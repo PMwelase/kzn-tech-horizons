@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KZN Tech Horizons</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
                 <!-- Centered Navigation Links -->
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#who-we-are">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
                     <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
                 </ul>
@@ -65,7 +65,7 @@
                             <h3 id="date">22 Feb 2025</h3>
                         </div>
                         <div id="countdown" class="text-center display-4"></div>
-                        <a href="#signup" class="btn custom-btn mt-3 mb-3">RSVP NOW</a>
+                        <a href="#signup" class="btn custom-btn mt-3 mb-3">Read More >></a>
                     </div>
                 </div>
             </div>
@@ -74,57 +74,186 @@
     </section>
 
 
-    <section id="about" class="container py-5">
-        <h2 class="text-center mb-4">About Us</h2>
-    
-        <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Mission Slide -->
-                <div class="carousel-item active">
-                    <div class="row align-items-center">
-                        <!-- Left Side: Image -->
-                        <div class="col-md-6">
-                            <img src="images/innovation-01.svg" class="img-fluid rounded shadow-lg" alt="Mission">
-                        </div>
-                        <!-- Right Side: Text -->
-                        <div class="col-md-6">
-                            <h3 class="fw-bold">Mission</h3>
-                            <p class="text-dark">
-                                We are a dedicated community focused on innovation and technological advancement 
-                                in KwaZulu-Natal. Our mission is to foster collaboration and empower individuals to drive change.
-                            </p>
-                        </div>
-                    </div>
+
+    <section id="who-we-are" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Side: "Who We Are" -->
+                <div class="col-md-6 d-flex flex-column justify-content-start align-items-end text-md-end" id="who-we-are-left">
+                    <h2 class="fw-bold who slide-left" data-animate="slide-left">Who</h2>
+                    <h2 class="fw-bold who slide-right" data-animate="slide-right">We</h2>
+                    <h2 class="fw-bold who slide-left" data-animate="slide-left">Are</h2>
                 </div>
     
-                <!-- Vision Slide -->
-                <div class="carousel-item">
-                    <div class="row align-items-center">
-                        <!-- Left Side: Image -->
-                        <div class="col-md-6">
-                            <img src="images/communities-01.svg" class="img-fluid rounded shadow-lg" alt="Vision">
-                        </div>
-                        <!-- Right Side: Text -->
-                        <div class="col-md-6">
-                            <h3 class="fw-bold">Vision</h3>
-                            <p class="text-dark">
-                                To position KZN as a competitive force in the tech industry by 
-                                fostering collaboration, supporting local startups, and driving innovation 
-                                towards making Durban a smart city by 2030.
-                            </p>
-                        </div>
+                <!-- Right Side: Typing Effect -->
+                <div class="col-md-6" id="who-we-are-right">
+                    <div class="typing-container">
+                        <p id="typing-text-1" class="typing-text" data-animate="typing"></p>
+                        <p id="typing-text-2" class="typing-text" data-animate="typing"></p>
+                        <p id="typing-text-3" class="typing-text" data-animate="typing"></p>
                     </div>
                 </div>
-    
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+            </div>
         </div>
     </section>
+    
+
+
+    <!-- Team -->
+    
+    <section id="team" class="py-5">
+
+        <div class="container text-center text-white mb-5">
+            <h2 class="display-4">Meet The Team</h2>
+        </div>
+    
+        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="profile-img-wrapper">
+                                    <img src="/images/SK-01.png" class="card-img-top" alt="Sphiwe SK Khuzwayo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sphiwe "SK" Khuzwayo</h5>
+                                    <h6 class="card-subtitle">Founder</h6>
+                                    <a href="https://linkedin.com/in/" class="linkedin-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="profile-img-wrapper">
+                                    <img src="images/zama-01.png" class="card-img-top" alt="Zama Khumalo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Zama Khumalo</h5>
+                                    <h6 class="card-subtitle">Sponsorship and Partnership Manager</h6>
+                                    <a href="https://linkedin.com/in/" class="linkedin-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="profile-img-wrapper">
+                                    <img src="images/sphe-01.png" class="card-img-top" alt="Spheyena Dube">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Spheyena Dube</h5>
+                                    <h6 class="card-subtitle">Event Director</h6>
+                                    <a href="https://linkedin.com/in/" class="linkedin-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="profile-img-wrapper">
+                                    <img src="images/Kwanele.jpeg" class="card-img-top" alt="David Kim">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Kwanele Mazibuko</h5>
+                                    <h6 class="card-subtitle">Logistics Coordinator</h6>
+                                    <a href="https://www.linkedin.com/in/kwanele-mazibuko-929a86260/" class="linkedin-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Slide -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="profile-img-wrapper">
+                                    <img src="/images/Aphiwe.jpg" class="card-img-top" alt="Sphiwe SK Khuzwayo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aphiwe Msabala</h5>
+                                    <h6 class="card-subtitle">Program Coordinator</h6>
+                                    <a href="https://www.linkedin.com/in/aphiwe-msabala/" class="linkedin-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="profile-img-wrapper">
+                                    <img src="images/phumelela.jpg" class="card-img-top" alt="Zama Khumalo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Phumelela Mwelase</h5>
+                                    <h6 class="card-subtitle">Technical Director</h6>
+                                    <a href="https://www.linkedin.com/in/phumelelamwelase/" class="linkedin-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="profile-img-wrapper">
+                                    <img src="images/sbahle-01.png" class="card-img-top" alt="Spheyena Dube">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sbahle Ngidi</h5>
+                                    <h6 class="card-subtitle">Marketing and Communications Manager</h6>
+                                    <a href="https://www.linkedin.com/in/sbahle-ngidi-02875b1ab/" class="linkedin-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card">
+                                <div class="profile-img-wrapper">
+                                    <img src="images/mpilo-01.png" class="card-img-top" alt="David Kim">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sandile Cele</h5>
+                                    <h6 class="card-subtitle">Volunteer Coordinator</h6>
+                                    <a href="https://www.linkedin.com/in/sandile-m-cele/" class="linkedin-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Navigation Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <!-- Font Awesome for LinkedIn icon -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    </section>
+
+
+    <!-- Team -->
+
+    
     
     
     <section id="volunteer" class="container py-5">
