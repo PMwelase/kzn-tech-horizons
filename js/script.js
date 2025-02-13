@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Typing effect setup
     const typingTexts = {
-        "typing-text-1": "KZN Tech Horizon is a community-driven initiative dedicated to establishing KwaZulu-Natal (KZN) as a vibrant tech hub. We connect local tech professionals, aspiring talent, and key stakeholders to foster innovation, collaboration, and technology-driven solutions.",
+        "typing-text-1": "At KZN Tech Horizons, we believe KwaZulu-Natal (KZN) has all the ingredients to become a thriving tech powerhouse with skilled professionals, ambitious innovators, and untapped potential. Yet, a gap remains between established tech experts and those eager to break into the industry. We are here to change that. Tech Horizons is a dynamic community initiative dedicated to bridging the gap, fostering connections, and unlocking new opportunities. Whether you're a seasoned professional, an aspiring tech enthusiast, or a company looking to invest in KZN’s growing digital economy, we provide the platform to connect, collaborate, and create.",
         "typing-text-2": "Our mission is to promote KZN's tech talent, attract companies to the region, and drive Durban's transformation into a smart city by 2030. We believe in empowering our community to develop cutting-edge solutions that address urban challenges, improve digital infrastructure, and promote sustainable development.",
         "typing-text-3": "Join us in building a future where KZN becomes a hub of opportunity, growth, and innovation."
     };
