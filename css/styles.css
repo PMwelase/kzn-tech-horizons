@@ -159,14 +159,14 @@ h5 {
 #who-we-are-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     height: 100%;
 }
 
 .who {
     flex: 1;
     font-size: 5rem;
-    text-align: right;
+    text-align: left;
     width: 100%;
     padding-right: 8rem;
 }
@@ -229,8 +229,8 @@ h5 {
 
 @media (max-width: 768px) {
     #who-we-are-left {
-        align-items: center;
-        text-align: center;
+        align-items: left;
+        text-align: left;
     }
 
     .who {
