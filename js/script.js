@@ -93,7 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const typingTexts = {
         "typing-text-1": "At KZN Tech Horizons, we believe KwaZulu-Natal (KZN) has all the ingredients to become a thriving tech powerhouse with skilled professionals, ambitious innovators, and untapped potential. Yet, a gap remains between established tech experts and those eager to break into the industry. We are here to change that. Tech Horizons is a dynamic community initiative dedicated to bridging the gap, fostering connections, and unlocking new opportunities. Whether you're a seasoned professional, an aspiring tech enthusiast, or a company looking to invest in KZN’s growing digital economy, we provide the platform to connect, collaborate, and create.",
         "typing-text-2": "We envision KwaZulu-Natal (KZN) as a thriving tech hub that fosters innovation, collaboration, and economic growth. By 2030, we aim to position Durban as a leading smart city, where cutting-edge solutions address urban challenges, enhance digital infrastructure, and drive sustainable development.",
-        "typing-text-3": "Join us in building a future where KZN becomes a hub of opportunity, growth, and innovation."
+        "typing-text-3": "KZN Tech Horizons is dedicated to transforming KwaZulu-Natal (KZN) into a thriving tech hub by bridging the gap between experienced professionals and emerging talent. We strive to promote KZN’s tech talent, attract companies and investment, and empower the community to develop cutting-edge solutions that address urban challenges. Our mission is to drive Durban’s transformation into a smart city by improving digital infrastructure, fostering sustainable development, and creating an ecosystem where technology fuels economic growth and innovation. By 2030, we aim to build a connected, future-ready region where businesses thrive, opportunities are abundant, and local talent leads the way in shaping the digital future.",
+        "typing-text-4": "Join us in building a future where KZN becomes a hub of opportunity, growth, and innovation."
     };
 
     function typeText(element, text) {
@@ -115,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     async function startTypingSequence() {
-        const elements = ['typing-text-1', 'typing-text-2', 'typing-text-3'];
+        const elements = ['typing-text-1', 'typing-text-2', 'typing-text-3', 'typing-text-4'];
         
         for (const elementId of elements) {
             const element = document.getElementById(elementId);
