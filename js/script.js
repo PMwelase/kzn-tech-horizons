@@ -14,13 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
     function startCountdown(eventDate) {
         function updateCountdown() {
             const countdownElement = document.getElementById('countdown');
+
+            let rsvpElement = document.getElementById('rsvp');
+            rsvpElement.setAttribute('href', 'https://forms.office.com/pages/responsepage.aspx?id=V5MpVjESHUCO5dQI4QNdc1faazNLuYpAjMP6H3FcjwRUQUs3S1BFODgxM0JIRTFLS0hOTzJJRThVRi4u&route=shorturl');
+            rsvpElement.classList.add('btn', 'custom-btn', 'mt-3', 'mb-3');
+            rsvpElement.innerHTML = 'RSVP Now >>';
+
             if (!countdownElement) return;
 
             const now = new Date().getTime();
             const timeLeft = eventDate - now;
 
-            if (timeLeft < 0) {
+            if (timeLeft <= 0) {
                 countdownElement.innerHTML = "Event Started!";
+                rsvpElement.setAttribute('href', 'https://kznth.netlify.app/events');
+                rsvpElement.innerHTML = 'See past events >>';
+
                 return;
             }
 
@@ -100,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function typeText(element, text) {
         return new Promise(resolve => {
             let index = 0;
-            element.textContent = ''; // Clear any existing text
+            element.textContent = '';
 
             function type() {
                 if (index < text.length) {
