@@ -1,12 +1,32 @@
-// document.getElementById('volunteerBtn').addEventListener('click', function() {
-//     alert('Thank you for your interest in volunteering!');
-// });
+// mailto-script.js
+document.getElementById('volunteerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const type = this.querySelector('select').value;
+    const firstName = this.querySelector('input[placeholder="First Name"]').value;
+    const lastName = this.querySelector('input[placeholder="Last Name"]').value;
+    const email = this.querySelector('input[type="email"]').value;
+    const message = this.querySelector('textarea').value;
 
-// document.getElementById('volunteerForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     window.location.href = "mailto:kzntechhorizons@gmail.com?subject=Volunteer Sign-up&body=Hello, I'd like to volunteer!";
-// });
+    // Format email subject and body
+    const subject = `New ${type} Application`;
+    const body = `
+    Type: ${type}
+    Name: ${firstName} ${lastName}
+    Email: ${email}
 
+    Message:
+    ${message}
+        `.trim();
+
+        // Create and open mailto link
+        const mailtoLink = `mailto:info@kznth.co.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+        
+        // Optional: Reset form after sending
+        this.reset();
+});
 
 // COUNTDOWN
 
@@ -27,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (timeLeft <= 0) {
                 countdownElement.innerHTML = "Event Started!";
-                rsvpElement.setAttribute('href', 'https://kznth.netlify.app/events');
+                rsvpElement.setAttribute('href', 'https://kznth.co.za/events');
                 rsvpElement.innerHTML = 'See past events >>';
 
                 return;
