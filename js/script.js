@@ -1,32 +1,43 @@
-// mailto-script.js
-document.getElementById('volunteerForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form values
-    const type = this.querySelector('select').value;
-    const firstName = this.querySelector('input[placeholder="First Name"]').value;
-    const lastName = this.querySelector('input[placeholder="Last Name"]').value;
-    const email = this.querySelector('input[type="email"]').value;
-    const message = this.querySelector('textarea').value;
+// Contact form handler
+function sendEmail() {
+    // Collect form data
+    const formData = {
+        role: document.getElementById('role').value,
+        name: document.getElementById('name').value,
+        surname: document.getElementById('surname').value,
+        email: document.getElementById('email').value,
+        text: document.getElementById('message').value
+    };
 
-    // Format email subject and body
-    const subject = `New ${type} Application`;
-    const body = `
-    Type: ${type}
-    Name: ${firstName} ${lastName}
-    Email: ${email}
-
-    Message:
-    ${message}
-        `.trim();
-
-        // Create and open mailto link
-        const mailtoLink = `mailto:info@kznth.co.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailtoLink;
-        
-        // Optional: Reset form after sending
-        this.reset();
-});
+    console.log('Role: ', formData.role);
+    console.log('Name: ', formData.name);
+    console.log('Surname: ', formData.surname);
+    console.log('Email: ', formData.email);
+    console.log('Text: ', formData.text);
+  
+    // Validate form data
+    if (!formData.name || !formData.surname || !formData.email || !formData.text) {
+        alert('Please fill out all fields.');
+        return;
+    }
+  
+    // Send the data to the backend using fetch
+    fetch('send_email.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while sending the message.');
+    });
+  }
 
 // COUNTDOWN
 

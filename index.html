@@ -277,32 +277,29 @@
                     <h2 class="text-center">Partner With Us</h2>
                     <form id="volunteerForm" class="text-center">
                         <div class="mb-3">
-                            <select class="form-control" required>
+                            <select class="form-control" id="role" required>
                                 <option value="volunteer">Volunteer</option>
                                 <option value="sponsor">Sponsor</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="First Name" required>
+                            <input type="text" id="name" class="form-control" placeholder="First Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Last Name" required>
+                            <input type="text" id="surname" class="form-control" placeholder="Last Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <input type="email" id="email" class="form-control" placeholder="Email Address" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3">Sign Me Up!</button>
+                        <button type="button" class="btn btn-primary mt-3" onclick="sendEmail()">Sign Me Up!</button>
                     </form>
                 </section>
             </div>
         </div>
     </div>
-    
-    
-
     <footer class="text-center p-3 bg-dark text-white" id="contact">
         <p>Get in touch:</p>
         <a href="https://www.linkedin.com/company/kzn-tech-horizons" class="socials">
