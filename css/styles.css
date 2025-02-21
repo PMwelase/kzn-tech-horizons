@@ -16,6 +16,10 @@ body {
     overflow: hidden;
 }
 
+section {
+    scroll-margin-top: 80px; /* Should match the scroll-padding-top value */
+}
+
 @media (max-width: 768px) {
     #home {
         height: auto !important;
