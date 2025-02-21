@@ -64,10 +64,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="content"> ${firstEvent.about}</div>
                 </div>     
             `
+            // document.querySelector(".hero-image").style.background = `
+            //     url('${imagePath}posters/poster-01.png');
+            //     background-size: contain;  /* Ensures the image is fully contained */
+            //     background-repeat: no-repeat; /* Prevents repeating the image */
+            //     background-position: center; /* Centers the image */
+            // `;
 
 
             document.querySelector(".hero-image").style.background = `
-                url('${imagePath}${firstEvent.eventPosterPath}') no-repeat center center/cover
+                url('${imagePath}posters/poster-01.png')
             `;
         }
     }

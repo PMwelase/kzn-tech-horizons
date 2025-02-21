@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KZN Tech Horizons</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            #head {
+                background-image: url('images/events/posters/poster-01.png'); /* Removed the extra parentheses */
+                background-size: cover; 
+                background-position: center;
+                min-height: 60vh;
+            }
+
+            .btn-pink {
+                background-color: #8b2252; /* $pink-800 */
+                border-color: #8b2252; /* $pink-800 */
+                color: white; /* Text color */
+                transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Smooth transitions */
+            }
+
+            /* Hover effect */
+            .btn-pink:hover {
+                color: white;
+                background-color: #6b1a3e; /* Darker shade for hover */
+                border-color: #6b1a3e; /* Darker shade for hover */
+                transform: scale(1.1); /* Slightly scale up the button */
+            }
+
+            #head .card {
+                background-color: rgba(0, 0, 0, 0.6);
+                color: white;
+            }
+
+            #head .card:hover{
+                transform: scale(1);
+            }
+
+            #current_event h2{
+                font-weight: 800;
+                text-align: center;
+            }
+
+            #current_event {
+                margin: 4rem;
+                text-align: left;
+            }
+        </style>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/KZNTH-Home-24.svg" alt="KZNTH Logo" class="img-fluid" style="height: 25px;">
+            </a>
+    
+            <!-- Navbar Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!-- Centered Navigation Links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#who-we-are">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#volunteer">Partner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/imbokodo.html">Imbokodo></li>
+                </ul>
+    
+                <!-- Right-aligned "Contact Us" -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link ms-lg-3" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="head">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 text-center">
+                <div class="card shadow-sm p-4" style="max-width: 400px; margin: 2rem auto;">
+                    <div class="card-body text-center">
+                        <h1 class="card-title fs-2 fw-bold mb-3">Official Launch</h1>
+                        <h3 class="card-subtitle mb-2">2025-02-22</h3>
+                        <h4 class="mb-3">Mangosuthu University of Technology (MUT)</h4>
+                        <p class="card-text mb-4">Join our networking event to connect with industry leaders.</p>
+                        <a href=></a>
+                        <button onclick="location.href = 'https://forms.office.com/r/7Z7CMWPsUb';" class="btn btn-pink btn-lg">RSVP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="current_event">
+        <div class="container mt-4">
+            <h2>
+                Vision 2025
+            </h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <img src="images/events/posters/Official_Launch.jpg" alt="Official Launch Poster" class="img-fluid" style="border-radius: 5%;">
+                </div>
+                <div class="col-md-9" style="padding: 0 5rem;">
+                    Join us on Saturday, the 22 of Feb, for the launch of KZN Tech Horizons, a groundbreaking initiative dedicated to transforming KwaZulu-Natal into a thriving tech hub. Our mission is to bridge the gap between experienced professionals and emerging talent, promoting KZN's tech talent, attracting companies and investment, and empowering the community to develop cutting-edge solutions.
+                
+                    Discover how KZN Tech Horizons plans to drive Durban's transformation into a smart city by 2030. Connect with like-minded individuals, innovators, and industry leaders. Our agenda includes:
+                    <ul>
+                        <br>
+                        <li>Welcome and introduction to KZN Tech Horizons</li>
+                        <li>Keynote address: "Transforming KZN into a Thriving Tech Hub"</li>
+                        <li>Networking opportunity</li>
+                    </ul>
+                    <a href="https://forms.office.com/r/7Z7CMWPsUb">Register now</a>
+                    to secure your spot and be part of shaping KZN's digital future!
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <section id="past-events">
+
+    </section>
+    <footer class="text-center p-3 bg-dark text-white" id="contact">
+        <p>Get in touch:</p>
+        <a href="https://www.linkedin.com/company/kzn-tech-horizons" class="socials">
+            <img src="images/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/kzntechhorizons/" class="socials">
+            <img src="images/instagram.svg" alt="Instagram">
+        </a>
+        <!-- <a href="#" class="socials">
+            <img src="images/twitter.svg" alt="X" >
+        </a> -->
+        <a href="mailto:info@kznth.co.za" class="socials">
+            <img src="images/email-05.svg" alt="email">
+        </a>
+        <a href="https://chat.whatsapp.com/K37Xovft04p48dSKmyvs6d" class="socials" >
+            <img src="images/whatsapp.svg" alt="whatsapp">
+        </a>
+    </footer>
+    <p id="copyright" style="font-family: Arial, Helvetica, sans-serif;">© 2025 KZN Tech Horizons | Created by 
+       <a href="https://www.linkedin.com/in/phumelelamwelase/" style="text-decoration: none;">@phumelelamwelase</a>
+    </p>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
