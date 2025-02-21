@@ -418,19 +418,6 @@ h5 {
     }
 }
 
-.carousel-right .carousel .carousel-track {
-    animation: scroll-right 50s linear infinite;
-}
-
-/* Animation for right movement */
-@keyframes scroll-right {
-    0% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
 /* Base LinkedIn styles for main team profiles */
 .linkedin-link {
     text-align: center;

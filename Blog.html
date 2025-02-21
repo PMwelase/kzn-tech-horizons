@@ -16,19 +16,41 @@
 
     <style>
         body {
+            background-image: url('/images/blog_back.jpg');
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: black;
+            position: relative;
         }
         #message {
+            color: black;
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(5px); /* Blur effect for the glass look */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for depth */
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: Montserrat;
+            font-weight: 600;
+        }
+
+        .black-overlay {
+            position: fixed; /* Change to fixed to cover the entire viewport */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+            z-index: 1; /* Ensure it's above the body but below the content */
+            pointer-events: none; /* Allow clicks to pass through */
         }
         .content {
             display: flex;
@@ -37,7 +59,7 @@
             text-align: left;
         }
         .content img {
-            width: 45%;
+            width: 90%;
             border-radius: 10px;
         }
         .message {
@@ -47,12 +69,38 @@
         .sponsors {
             margin-top: 30px;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: white;
             border-radius: 10px;
         }
+
+        .sponsor-img {
+            height: 150px; /* Adjust height as needed */
+            width: auto; /* Keeps aspect ratio */
+            object-fit: contain; /* Ensures the full image is visible without distortion */
+        }
+
+        footer {
+    background-color: #000; /* Ensures a dark background */
+    position: relative; /* Keeps it above the overlay */
+    z-index: 3; /* Higher than the overlay */
+    padding: 20px 0;
+}
+
+    #copyright {
+        position: relative;
+        z-index: 3;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+
     </style>
 </head>
 <body>
+    <div class="black-overlay"></div> <!-- Add this line for the overlay -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div class="container">
             <!-- Logo -->
@@ -85,60 +133,81 @@
     </nav>
     <section id="message">
     <div class="container">
-        <h1>A Message from Our Founder</h1>
+        <h1 style="margin-bottom: 2rem;">A Message from Our Founder</h1>
         <div class="content">
-            <img src="/images/Khuzwayo-01.png" alt="Founder's Picture">
-            <div class="message">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut augue vulputate, suscipit sem non, ornare lacus. Nunc at fringilla enim. Proin maximus imperdiet purus, id molestie augue mattis sed. Curabitur viverra consectetur sollicitudin. Nullam non pulvinar orci. Nunc porttitor varius sodales. Etiam vitae semper eros. Cras non ex mauris.
-
-                    Fusce ante augue, cursus auctor facilisis quis, semper id neque. Praesent nunc nisl, lobortis ac blandit non, fringilla vel dolor. In vel ultricies ligula, in facilisis arcu. </p>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-12 text-center">
+                    <img src="/images/Khuzwayo-01.png" alt="Founder's Picture">
+                </div>
+                <div class="col-lg-6 col-sm-10 col-md-10 py-3 py-sm-5 message">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut augue vulputate, suscipit sem non, ornare lacus. Nunc at fringilla enim. Proin maximus imperdiet purus, id molestie augue mattis sed. Curabitur viverra consectetur sollicitudin. Nullam non pulvinar orci. Nunc porttitor varius sodales. Etiam vitae semper eros. Cras non ex mauris.
+        
+                    Fusce ante augue, cursus auctor facilisis quis, semper id neque.</p>
+                </div>
             </div>
         </div>
+        
+
         <div class="sponsors">
             <h2>Our Sponsors</h2>
             <p>We are grateful for the support of our amazing sponsors. Their contributions help us achieve our mission.</p>
             <div class="container">
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="/images/sponsor-01.png" alt="">
-                        <img src="/images/sponsor-02.png" alt="">
-                        <img src="/images/sponsor-03.png" alt="">
-                        <img src="/images/sponsor-04.png" alt="">
-                        <img src="/images/sponsor-05.png" alt="">
-                        <img src="/images/sponsor-06.png" alt="">
-                        <img src="/images/sponsor-07.png" alt="">
-                        <img src="/images/sponsor-01.png" alt="">
-                        <img src="/images/sponsor-02.png" alt="">
-                        <img src="/images/sponsor-03.png" alt="">
-                        <img src="/images/sponsor-04.png" alt="">
-                        <img src="/images/sponsor-05.png" alt="">
-                        <img src="/images/sponsor-06.png" alt="">
-                        <img src="/images/sponsor-07.png" alt="">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-3">
+                        <img src="/images/sponsor-05.png" class="img-fluid sponsor-img" alt="Sponsor 5">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="/images/sponsor-02.png" class="img-fluid sponsor-img" alt="Sponsor 2">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="/images/sponsor-03.png" class="img-fluid sponsor-img" alt="Sponsor 3">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="/images/sponsor-06.png" class="img-fluid sponsor-img" alt="Sponsor 6">
                     </div>
                 </div>
-            </div>
-            <div class="container carousel-right">
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="/images/sponsor-01.png" alt="">
-                        <img src="/images/sponsor-02.png" alt="">
-                        <img src="/images/sponsor-03.png" alt="">
-                        <img src="/images/sponsor-04.png" alt="">
-                        <img src="/images/sponsor-05.png" alt="">
-                        <img src="/images/sponsor-06.png" alt="">
-                        <img src="/images/sponsor-07.png" alt="">
-                        <img src="/images/sponsor-01.png" alt="">
-                        <img src="/images/sponsor-02.png" alt="">
-                        <img src="/images/sponsor-03.png" alt="">
-                        <img src="/images/sponsor-04.png" alt="">
-                        <img src="/images/sponsor-05.png" alt="">
-                        <img src="/images/sponsor-06.png" alt="">
-                        <img src="/images/sponsor-07.png" alt="">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-3">
+                        <img src="/images/sponsor-01.png" class="img-fluid sponsor-img" alt="Sponsor 1">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="/images/sponsor-04.png" class="img-fluid sponsor-img" alt="Sponsor 4">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="/images/sponsor-07.png" class="img-fluid sponsor-img" alt="Sponsor 7">
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>    
     </div>
 </section>
+<footer class="text-center p-3 bg-dark text-white" id="contact">
+    <p>Get in touch:</p>
+    <a href="https://www.linkedin.com/company/kzn-tech-horizons" class="socials">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+    </a>
+    <a href="https://www.instagram.com/kzntechhorizons/" class="socials">
+        <img src="images/instagram.svg" alt="Instagram">
+    </a>
+    <!-- <a href="#" class="socials">
+        <img src="images/twitter.svg" alt="X" >
+    </a> -->
+    <a href="mailto:info@kznth.co.za" class="socials">
+        <img src="images/email-05.svg" alt="email">
+    </a>
+    <a href="https://chat.whatsapp.com/K37Xovft04p48dSKmyvs6d" class="socials" >
+        <img src="images/whatsapp.svg" alt="whatsapp">
+    </a>
+</footer>
+<p id="copyright" style="font-family: Arial, Helvetica, sans-serif;">© 2025 KZN Tech Horizons | Created by 
+   <a href="https://www.linkedin.com/in/phumelelamwelase/" style="text-decoration: none;">@phumelelamwelase</a>
+</p>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+ <!-- Font Awesome for LinkedIn icon -->
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+ rel="stylesheet"
+/>
 </body>
 </html>
