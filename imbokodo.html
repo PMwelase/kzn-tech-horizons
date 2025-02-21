@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KZN-Tech Mbokodo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KZN Tech Horizons</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
     <style>
         body {
@@ -20,15 +23,34 @@
             text-align: center;
             position: relative;
         }
+        #message {
+            color: black;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(5px); /* Blur effect for the glass look */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for depth */
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: Montserrat;
+            font-weight: 600;
+        }
+
         .black-overlay {
-            position: fixed;
+            position: fixed; /* Change to fixed to cover the entire viewport */
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-            pointer-events: none;
+            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+            z-index: 1; /* Ensure it's above the body but below the content */
+            pointer-events: none; /* Allow clicks to pass through */
         }
         .content {
             display: flex;
@@ -50,6 +72,30 @@
             background-color: white;
             border-radius: 10px;
         }
+
+        .sponsor-img {
+            height: 150px; /* Adjust height as needed */
+            width: auto; /* Keeps aspect ratio */
+            object-fit: contain; /* Ensures the full image is visible without distortion */
+        }
+
+        footer {
+    background-color: #000; /* Ensures a dark background */
+    position: relative; /* Keeps it above the overlay */
+    z-index: 3; /* Higher than the overlay */
+    padding: 20px 0;
+}
+
+    #copyright {
+        position: relative;
+        z-index: 3;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+
     </style>
 </head>
 <body>
@@ -83,7 +129,7 @@
             <div class="content">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-6 col-sm-12 text-center">
-                        <img src="/images/mbokodo-founder.png" alt="Mbokodo Founder">
+                        <img src="/images/zama-01.png" alt="Mbokodo Founder">
                     </div>
                     <div class="col-lg-6 col-sm-10 col-md-10 py-3 py-sm-5 message">
                         <p>At KZN-Tech Mbokodo, we are dedicated to empowering women in technology through mentorship, networking, and hands-on opportunities. Join us as we break barriers and build a future where women thrive in tech.</p>
@@ -91,16 +137,35 @@
                 </div>
             </div>
             <div class="sponsors">
-                <h2>Our Supporters</h2>
-                <p>We appreciate the organizations and individuals who support our mission.</p>
+                <h2>Our Sponsors</h2>
+                <p>We are grateful for the support of our amazing sponsors. Their contributions help us achieve our mission.</p>
                 <div class="container">
                     <div class="row text-center">
                         <div class="col-md-3 mb-3">
                             <img src="/images/sponsor-05.png" class="img-fluid sponsor-img" alt="Sponsor 5">
                         </div>
+                        <div class="col-md-3 mb-3">
+                            <img src="/images/sponsor-02.png" class="img-fluid sponsor-img" alt="Sponsor 2">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <img src="/images/sponsor-03.png" class="img-fluid sponsor-img" alt="Sponsor 3">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <img src="/images/sponsor-06.png" class="img-fluid sponsor-img" alt="Sponsor 6">
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-3">
+                            <img src="/images/sponsor-01.png" class="img-fluid sponsor-img" alt="Sponsor 1">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <img src="/images/sponsor-04.png" class="img-fluid sponsor-img" alt="Sponsor 4">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <img src="/images/sponsor-07.png" class="img-fluid sponsor-img" alt="Sponsor 7">
+                        </div>
+                    </div>
+                </div>    
         </div>
     </section>
     <footer class="text-center p-3 bg-dark text-white" id="contact">
@@ -122,7 +187,7 @@
         </a>
     </footer>
     <p id="copyright" style="font-family: Arial, Helvetica, sans-serif;">© 2025 KZN Tech Horizons | Created by 
-       <a href="https://www.linkedin.com/in/phumelelamwelase/" style="text-decoration: none;">@spheyena</a>
+       <a href="https://www.linkedin.com/in/spheyenadube/" style="text-decoration: none;">@spheyenadube
     </p>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
