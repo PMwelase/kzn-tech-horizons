@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (timeLeft <= 0) {
                 countdownElement.innerHTML = "Event Started!";
-                rsvpElement.setAttribute('href', 'https://kznth.co.za/events');
+                rsvpElement.setAttribute('href', 'https://kznth.co.za/event.html');
                 rsvpElement.innerHTML = 'See past events >>';
 
                 return;
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setInterval(updateCountdown, 1000);
     }
 
-    const eventDate = new Date(2025, 1, 22, 9, 0, 0).getTime();
+    const eventDate = new Date(2025, 1, 22, 10, 0, 0).getTime();
     startCountdown(eventDate);
 });
 
