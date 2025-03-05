@@ -12,25 +12,31 @@
         <link rel="stylesheet" href="css/styles.css">
         <style>
             #head {
-                background-image: url('images/events/posters/poster-01.png'); /* Removed the extra parentheses */
+                background-image: url('images/events/posters/imbokodo-web-01.png');
                 background-size: cover; 
                 background-position: center;
                 min-height: 60vh;
             }
 
+            @media (max-width: 768px) {
+                #head {
+                    background-image: url('images/events/posters/small-web-01.png');
+                }
+            }
+
             .btn-pink {
-                background-color: #8b2252; /* $pink-800 */
-                border-color: #8b2252; /* $pink-800 */
-                color: white; /* Text color */
+                background-color: #8b2252;
+                border-color: #8b2252;
+                color: white; 
                 transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Smooth transitions */
             }
 
             /* Hover effect */
             .btn-pink:hover {
                 color: white;
-                background-color: #6b1a3e; /* Darker shade for hover */
-                border-color: #6b1a3e; /* Darker shade for hover */
-                transform: scale(1.1); /* Slightly scale up the button */
+                background-color: #6b1a3e;
+                border-color: #6b1a3e;
+                transform: scale(1.1);
             }
 
             #head .card {
@@ -51,6 +57,17 @@
                 margin: 4rem;
                 text-align: left;
             }
+
+            .description {
+                padding: 0 5rem;
+            }
+
+            @media (max-width: 768px) {
+            .description {
+                padding: 0;
+            }
+        }
+
         </style>
     </head>
 <body>
@@ -86,75 +103,76 @@
     </nav>
 
     <section id="head">
-        <div class="container d-flex justify-content-center align-items-center">
-            <div class="col-lg-6 text-center">
-                <div class="card shadow-sm p-4" style="max-width: 400px; margin: 2rem auto;">
-                    <div class="card-body text-center">
-                        <h1 class="card-title fs-2 fw-bold mb-3">Official Launch</h1>
-                        <h3 class="card-subtitle mb-2">2025-02-22</h3>
-                        <h4 class="mb-3">Mangosuthu University of Technology (MUT)</h4>
-                        <p class="card-text mb-4">Join our networking event to connect with industry leaders.</p>
-                        <a href=></a>
-                        <button onclick="location.href = 'https://forms.office.com/r/7Z7CMWPsUb';" class="btn btn-pink btn-lg">RSVP</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </section>
     <section id="current_event">
         <div class="container mt-4">
             <h2>
-                Vision 2025
+                Women's Day Webinar
             </h2>
             <div class="row mt-4">
                 <div class="col-md-3">
-                    <img src="images/events/posters/Official_Launch.jpg" alt="Official Launch Poster" class="img-fluid" style="border-radius: 5%;">
+                    <img src="images/events/posters/womens.jpeg" alt="Official Launch Poster" class="img-fluid" style="border-radius: 5%;">
                 </div>
-                <div class="col-md-9" style="padding: 0 5rem;">
-                    Join us on Saturday, the 22 of Feb, for the launch of KZN Tech Horizons, a groundbreaking initiative dedicated to transforming KwaZulu-Natal into a thriving tech hub. Our mission is to bridge the gap between experienced professionals and emerging talent, promoting KZN's tech talent, attracting companies and investment, and empowering the community to develop cutting-edge solutions.
-                
-                    Discover how KZN Tech Horizons plans to drive Durban's transformation into a smart city by 2030. Connect with like-minded individuals, innovators, and industry leaders. Our agenda includes:
+                <div class="col-md-9 description">
+                    Celebrating International Women's Day with Tech Mbokodo!
+
+                    Join us for a powerful webinar featuring phenomenal women from diverse backgrounds as they share their experiences in the tech industry. Tech Mbokodo is excited to host this inspiring session with leaders who have broken barriers and made a mark in the tech world.
+
+                    <p>Our speakers include:</p>
+
                     <ul>
                         <br>
-                        <li>Welcome and introduction to KZN Tech Horizons</li>
-                        <li>Keynote address: "Transforming KZN into a Thriving Tech Hub"</li>
-                        <li>Networking opportunity</li>
+                        <li>Mbalenhle Khambule - Policy Analyst</li>
+                        <li>⁠Nqobile Ndlovu - Founder of Propain Property Software Development</li>
+                        <li>Shraddha Neerputh - Data Professional</li>
+                        <li>Zama Dlamini- ICT Manager, Moses Kotane</li>
+                        <li>Nafeesa Alibedi - Founder & Director, Creative Tech Solutions</li>
                     </ul>
-                    <a href="https://forms.office.com/r/7Z7CMWPsUb">Register now</a>
-                    to secure your spot and be part of shaping KZN's digital future!
+                    <a href="https://forms.office.com/r/ZdCyXKHAfV?origin=lprLink">Register now</a>
+                    . Don't miss out on this enriching conversation! Register now using the link below and be part of this powerful discussion.
                 </div>
                 
             </div>
         </div>
 
+    </section>
+
+    <section id="past_events">
+        <div class="container my-5">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="h-100 p-4 rounded-3" style="background-color: #D6DCDD; text-align: left;">
+                        <h2 class="section-title">Vision 2025 - 22 Feb 25</h2>
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <div class="col-md-3">
+                                <img src="images/events/posters/Official_Launch.jpg" alt="Official Launch Poster" class="img-fluid" style="border-radius: 5%;">
+                            </div>
+                            <div class="col-md-9 mt-3 mt-lg-0 ms-lg-3">
+                               <p>After months of dedication and collaboration, KZN Tech Horizons officially launched! This marked a major step toward our vision of establishing KwaZulu-Natal as a thriving tech hub. The journey wasn’t always easy, but it has been incredibly rewarding, filled with learning and innovation.</p>
+                               <a href="https://flic.kr/s/aHBqjC3T7z">See what happened</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
     </section>
     <section id="past-events">
 
     </section>
     <footer class="text-center p-3 bg-dark text-white" id="contact">
-        <p>Get in touch:</p>
-        <a href="https://www.linkedin.com/company/kzn-tech-horizons" class="socials">
-            <img src="images/linkedin.svg" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/kzntechhorizons/" class="socials">
-            <img src="images/instagram.svg" alt="Instagram">
-        </a>
-        <!-- <a href="#" class="socials">
-            <img src="images/twitter.svg" alt="X" >
-        </a> -->
-        <a href="mailto:info@kznth.co.za" class="socials">
-            <img src="images/email-05.svg" alt="email">
-        </a>
-        <a href="https://chat.whatsapp.com/K37Xovft04p48dSKmyvs6d" class="socials" >
-            <img src="images/whatsapp.svg" alt="whatsapp">
-        </a>
+        <div id="footer-container"></div>
     </footer>
-    <p id="copyright" style="font-family: Arial, Helvetica, sans-serif;">© 2025 KZN Tech Horizons | Created by 
-       <a href="https://www.linkedin.com/in/phumelelamwelase/" style="text-decoration: none;">@phumelelamwelase</a>
-    </p>
+    <div id="copyright-container"></div>
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/copyright.js"></script>
 
 </body>
 </html>

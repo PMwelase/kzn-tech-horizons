@@ -39,6 +39,7 @@ function sendEmail() {
     });
   }
 
+  
 // COUNTDOWN
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -47,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const countdownElement = document.getElementById('countdown');
 
             let rsvpElement = document.getElementById('rsvp');
-            rsvpElement.setAttribute('href', 'https://forms.office.com/pages/responsepage.aspx?id=V5MpVjESHUCO5dQI4QNdc1faazNLuYpAjMP6H3FcjwRUQUs3S1BFODgxM0JIRTFLS0hOTzJJRThVRi4u&route=shorturl');
+            rsvpElement.setAttribute('href', 'https://forms.office.com/pages/responsepage.aspx?id=0TAZS_QStUC0jL2GEXQp2KCutb3wHEtFkIRnjxsj0plURjJENlRYTkg1RUtGMFA3QjVMWVdLN0Y2QS4u&origin=lprLink&route=shorturl');
             rsvpElement.classList.add('btn', 'custom-btn', 'mt-3', 'mb-3');
             rsvpElement.innerHTML = 'RSVP Now >>';
 
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setInterval(updateCountdown, 1000);
     }
 
-    const eventDate = new Date(2025, 1, 22, 10, 0, 0).getTime();
+    const eventDate = new Date(2025, 2, 8, 10, 0, 0).getTime();
     startCountdown(eventDate);
 });
 

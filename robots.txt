@@ -1,0 +1,27 @@
+# robots.txt for kznth.co.za
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kznth.co.za/sitemap.xml
+
+# Disallow admin areas if they exist
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /dashboard/
+
+# Disallow any temporary or development areas
+Disallow: /dev/
+Disallow: /temp/
+Disallow: /test/
+
+# Disallow duplicate content
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Crawl-delay for specific bots if needed
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

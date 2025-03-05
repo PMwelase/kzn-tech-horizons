@@ -23,7 +23,7 @@
             padding-bottom: 0.5rem;
             margin-bottom: 2rem;
         }
-        .card {
+        .mycard {
             border: none;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
@@ -95,7 +95,7 @@
     </div>
 
     <div class="container my-5">
-        <div class="row g-4"> <!-- g-4 adds gap/gutters between columns -->
+        <div class="row g-4">
             <div class="col-lg-6">
                 <div class="h-100 p-4 rounded-3" style="background-color: #EAE2ED;">
                     <h2 class="section-title">Our Vision</h2>
@@ -118,7 +118,7 @@
             <h2 class="section-title">Why Join KZN Tech Mbokodo?</h2>
             
             <div class="col-md-4 mb-4">
-                <div class="card h-100 p-4">
+                <div class="mycard h-100 p-4">
                     <div class="card-body">
                         <h3 class="card-title h4">Empowerment and Support</h3>
                         <p class="card-text">KZN Tech Mbokodo provides a safe, empowering space for women to grow, collaborate, and succeed in tech. It's a place where your voice is heard, and your ambitions are supported.</p>
@@ -127,7 +127,7 @@
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 p-4">
+                <div class="mycard h-100 p-4">
                     <div class="card-body">
                         <h3 class="card-title h4">Mentorship and Networking</h3>
                         <p class="card-text">By joining, women gain access to experienced mentors, industry leaders, and a network of like-minded individuals, offering guidance, collaboration, and inspiration.</p>
@@ -136,7 +136,7 @@
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 p-4">
+                <div class="mycard h-100 p-4">
                     <div class="card-body">
                         <h3 class="card-title h4">Opportunities for Growth</h3>
                         <p class="card-text">Whether you're looking to start your own tech venture, innovate within an existing organization, or learn new skills, KZN Tech Mbokodo offers a platform with a wealth of opportunities tailored for women.</p>
@@ -145,7 +145,7 @@
             </div>
 
             <div class="col-md-6 mb-4">
-                <div class="card h-100 p-4">
+                <div class="mycard h-100 p-4">
                     <div class="card-body">
                         <h3 class="card-title h4">Breaking Barriers</h3>
                         <p class="card-text">We are committed to reducing the gender gap in tech and helping women take their rightful place at the forefront of innovation.</p>
@@ -154,7 +154,7 @@
             </div>
 
             <div class="col-md-6 mb-4">
-                <div class="card h-100 p-4">
+                <div class="mycard h-100 p-4">
                     <div class="card-body">
                         <h3 class="card-title h4">Inclusive Community</h3>
                         <p class="card-text">The hub fosters a diverse and inclusive environment where women from all backgrounds and experiences can connect, collaborate, and build tech-driven solutions for the future.</p>
@@ -175,27 +175,13 @@
         </div>
     </div>
     <footer class="text-center p-3 bg-dark text-white" id="contact">
-        <p>Get in touch:</p>
-        <a href="https://www.linkedin.com/company/kzn-tech-horizons" class="socials">
-            <img src="images/linkedin.svg" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/kzntechhorizons/" class="socials">
-            <img src="images/instagram.svg" alt="Instagram">
-        </a>
-        <!-- <a href="#" class="socials">
-            <img src="images/twitter.svg" alt="X" >
-        </a> -->
-        <a href="mailto:info@kznth.co.za" class="socials">
-            <img src="images/email-05.svg" alt="email">
-        </a>
-        <a href="https://chat.whatsapp.com/K37Xovft04p48dSKmyvs6d" class="socials" >
-            <img src="images/whatsapp.svg" alt="whatsapp">
-        </a>
+        <div id="footer-container"></div>
     </footer>
-    <p id="copyright" style="font-family: Arial, Helvetica, sans-serif;">© 2025 KZN Tech Horizons | Created by 
-       <a href="https://www.linkedin.com/in/phumelelamwelase/" style="text-decoration: none;">@phumelelamwelase</a>
-    </p>
+    
+    <div id="copyright-container"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/copyright.js"></script>
 </body>
 </html>

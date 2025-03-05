@@ -1,3 +1,4 @@
+/* <-- Global Styles --> */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -5,56 +6,66 @@ body {
     text-align: center;
 }
 
+/* <-- Section Styling --> */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* <-- Home Section --> */
 #home {
-    background-image: url('/images/julia-joppien-VcNd2JX-y0s-unsplash.jpg');
-    background-size: cover;
-    background-position: center center;
     background-attachment: fixed;
+    background-image: url('/images/julia-joppien-VcNd2JX-y0s-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
     height: 100vh;
+    overflow: hidden;
     position: relative;
     z-index: 0; 
-    overflow: hidden;
 }
 
-section {
-    scroll-margin-top: 80px; /* Should match the scroll-padding-top value */
-}
-
+/* <-- Home Section Responsive --> */
 @media (max-width: 768px) {
     #home {
         height: auto !important;
     }
 }
 
-.fade-in-image { animation: fadeIn 5s; }
+/* <-- Fade-In Image Animation (Initial) --> */
+.fade-in-image {
+    animation: fadeIn 5s;
+}
 
+/* <-- Home Section: Black Overlay --> */
 #home .black-overlay {
+    background-color: black;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    pointer-events: none;
     position: absolute; 
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: black;
     z-index: 1;
-    pointer-events: none;
-    opacity: 0.8;
 }
 
+/* <-- Home Section: Navbar --> */
 #home .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    background-color: rgba(0, 0, 0, 1); 
     backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 1); 
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
 }
 
+/* <-- Home Section: Container --> */
 #home .container {
     position: relative;
     z-index: 2;
 }
 
+/* <-- Home Section: Text and Buttons Styling --> */
 #home h2,
 #home h3,
 #home h4,
@@ -62,29 +73,34 @@ section {
 #home .btn,
 #home .nav-link {
     color: white;
+    mix-blend-mode: normal;
     position: relative;
     z-index: 2;
-    mix-blend-mode: normal;
 }
 
+/* <-- Home Section: Date Styling --> */
 #home #date {
     color: #EEE619;
     font-weight: 500;
 }
 
+/* <-- Home Section: Countdown Styling --> */
 #home #countdown {
     font-weight: 500;
 }
 
+/* <-- Navigation Link Transitions --> */
 .navbar-nav .nav-link {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* <-- Navigation Link Hover Effects --> */
 .navbar-nav .nav-link:hover {
     transform: scale(1.2); /* Zoom effect */
     /* color: #EEE619;  */
 }
 
+/* <-- Circle Mask Effect --> */
 .circle-mask {
     -webkit-mask: radial-gradient(
         circle at var(--mouse-x) var(--mouse-y),
@@ -98,22 +114,20 @@ section {
     );
 }
 
+/* <-- Home Section: D-Flex Padding --> */
 #home .d-flex.align-items-center {
     padding-top: 60px;
 }
 
-
+/* <-- Logo and Right Text Styling --> */
 .right-text, .logo-text {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800; /* ExtraBold */
+    font-weight: 800;
 }
-
-
 .right-text {
-    width: 100%;
     text-align: center;
+    width: 100%;
 }
-
 .logo-text {
     font-family: 'Montserrat';
     font-size: 2rem;
@@ -123,12 +137,14 @@ section {
     text-align: center;
 }
 
+/* <-- Fade-In Image Animation (Updated) --> */
 .fade-in-image {
+    animation: fadeIn 2s ease-in-out forwards;
     opacity: 0;
     transform: translateY(-20px);
-    animation: fadeIn 2s ease-in-out forwards;
 }
 
+/* <-- Keyframes: fadeIn --> */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -140,45 +156,50 @@ section {
     }
 }
 
-
+/* <-- Title Styling --> */
 #title {
     font-size: 300%;
     font-weight: 800;
 }
 
+/* <-- Subtitle Styling --> */
 #subtitle {
     font-size: 150%;
     font-weight: 600;
 }
 
-
+/* <-- Heading 5 Styling --> */
 h5 {
     color: black;
 }
 
+/* <-- Who We Are Section --> */
 #who-we-are {
     margin-top: 4rem;
     min-height: 100vh;
 }
 
+/* <-- Who We Are: Left Column --> */
 #who-we-are-left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100vh;
+    justify-content: space-between;
     padding: 2rem 0;
 }
 
+/* <-- Who We Are: Title Text (who) --> */
 .who {
     font-size: clamp(4rem, 15vw, 12rem);
-    text-align: center;
-    width: 100%;
     line-height: 1;
     margin: 0;
     padding: 1rem 2rem;
+    text-align: center;
     transition: font-size 0.3s ease;
+    width: 100%;
 }
 
+/* <-- Who We Are: Responsive Styles --> */
 @media (max-width: 768px) {
     #who-we-are-left {
         height: auto;
@@ -186,21 +207,23 @@ h5 {
     }
     
     .who {
-        text-align: center;
         padding: 0.5rem;
+        text-align: center;
     }
 }
 
+/* <-- Data Animate Base --> */
 [data-animate] {
     opacity: 0;
     transition: opacity 0.5s ease-out;
 }
 
+/* <-- Data Animate Active State --> */
 [data-animate].active {
     opacity: 1;
 }
 
-/* Slide-in animations */
+/* <-- Keyframes: slideInLeft --> */
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -212,6 +235,7 @@ h5 {
     }
 }
 
+/* <-- Keyframes: slideInRight --> */
 @keyframes slideInRight {
     from {
         opacity: 0;
@@ -223,30 +247,36 @@ h5 {
     }
 }
 
+/* <-- Slide Left Animation --> */
 .slide-left.active {
     animation: slideInLeft 1s ease-out forwards;
 }
 
+/* <-- Slide Right Animation --> */
 .slide-right.active {
     animation: slideInRight 1s ease-out forwards;
 }
 
+/* <-- Who We Are: Right Column --> */
 #who-we-are-right {
-    display: flex;
     align-items: flex-start;
+    display: flex;
 }
 
+/* <-- Typing Container --> */
 .typing-container {
     text-align: left;
     width: 100%;
 }
 
+/* <-- Typing Text Styling --> */
 .typing-text {
     margin-bottom: 1.5rem;
     min-height: 2em;
     opacity: 1 !important;
 }
 
+/* <-- Who We Are: Additional Responsive Styles --> */
 @media (max-width: 768px) {
     #who-we-are-left {
         align-items: left;
@@ -258,176 +288,229 @@ h5 {
     }
 
     #who-we-are-right {
-        text-align: left;
         margin-top: 2rem;
+        text-align: left;
     }
 }
 
-
-
+/* <-- Socials Links Base --> */
 .socials {
     text-decoration: none;
 }
 
+/* <-- Socials Image Styling --> */
 .socials img {
     height: 2rem;
     margin: 1.2rem;
-    width: auto;
     transition: transform 0.3s ease-in-out;
+    width: auto;
 }
 
+/* <-- Socials Image Hover --> */
 .socials img:hover {
     transform: scale(1.5);
 }
 
+/* <-- Custom Button Styling --> */
 .custom-btn {
     background-color: #294DF0 !important; 
-    color: white !important;
-    padding: 12px 20px;
-    font-weight: bold;
     border-radius: 8px;
+    color: white !important;
+    font-weight: bold;
+    padding: 12px 20px;
     transition: background 0.3s ease-in-out, transform 0.3s ease, color 0.3s ease;
-    transform: scale(1); 
+    transform: scale(1);
 }
 
+/* <-- Custom Button Hover --> */
 .custom-btn:hover {
     background-color: #123ACC !important;
     transform: scale(1.2);
 }
 
+/* <-- Copyright Styling --> */
 #copyright {
-    font-family: poppins; 
+    color: #48498B;
+    font-family: poppins;
+    margin-top: 0.5rem;
     padding-top: 0.5rem;
 }
 
+/* <-- Copyright Link Styling --> */
+#copyright a {
+    color: #48498B;
+    text-decoration: none;
+}
+
+/* <-- Carousel Item Responsive Styles --> */
 @media (max-width: 767px) {
     .carousel-item {
         padding: 20px;
     }
 }
 
+/* <-- Black Overlay Responsive Styles --> */
+@media (max-width: 767px) {
+    .black-overlay {
+        opacity: 0.5;
+    }
+}
 
+/* <-- Team Image Styling --> */
 .team-img {
     border-radius: 1.5rem;
     padding: 0.5rem;
-    }
+}
 
-    .mt-4 {
-        margin-top: 2rem;
-    }
+/* <-- Margin Top 4 Utility --> */
+.mt-4 {
+    margin-top: 2rem;
+}
 
-    .my-5 .team-img {
-        margin-top: 2rem;
-    }
+/* <-- My-5 Team Image Spacing --> */
+.my-5 .team-img {
+    margin-top: 2rem;
+}
 
-
-    #team {
+/* <-- Team Section Background --> */
+#team {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/images/team-02.jpg');
-    background-size: cover;
-    background-position: center;
     background-attachment: fixed;
-    
-}
-    /* card Container */
-.card {
-  background-color: white;
-  border-radius: 1rem;
-  margin: 0.5rem;
-  padding-top: 0.15rem;
-  display: flex;
-  flex-direction: column;
+    background-position: center;
+    background-size: cover;
 }
 
-.card {
-  /* Ensure the card takes the full width of its column */
-  width: 100%;
-  background-color: white;
-  border-radius: 1rem;
-  margin: 0.5rem;
-  padding-top: 0.15rem;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Allow long text to wrap instead of expanding the card */
-.card h5,
-.card h6 {
-  white-space: normal;
-  overflow-wrap: break-word;
-}
-
-.card {
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-/* Picture Container */
-.picture {
-  margin: 1rem auto 0;
-  width: 7rem;
-  height: 7rem;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  padding: 0.15rem;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Picture Image */
-.picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
-}
-
-/* Headings in card */
-.card h5 {
-  padding: 0.7rem;
-}
-
-.card h6 {
-  margin: 0 0.5rem 0.8rem 0.5rem; /* 1rem bottom margin for extra white space */
-  white-space: normal;
-  overflow-wrap: break-word;
-}
-
-
-.container {
-    width: 100%;
+/* <-- Carousel Container --> */
+.carousel-container {
+    margin: 0 auto;
+    max-width: 1200px;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
+/* <-- Carousel Slide --> */
+.carousel-slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+/* <-- Card Styling --> */
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding-top: 0.15rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: calc(16.666% - 1rem);
+}
+
+/* <-- Card Hover Effects --> */
+.card:hover {
+    transform: scale(1.05);
+    z-index: 30;
+}
+
+/* <-- Card Responsive Styles --> */
+@media (max-width: 768px) {
+    .card {
+        margin: 0.5rem auto; 
+        max-width: 400px;
+        width: 100%; /* Stack all cards vertically on mobile */
+    }
+}
+
+/* <-- Picture Container --> */
+.picture {
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 7rem;
+    justify-content: center;
+    margin: 1rem auto 0;
+    overflow: hidden;
+    padding: 0.15rem;
+    width: 7rem;
+}
+
+/* <-- Picture Image Styling --> */
+.picture img {
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+/* <-- Card Heading 5 Styling --> */
+.card h5 {
+    padding: 0.7rem;
+    text-align: center;
+}
+
+/* <-- Card Heading 6 Styling --> */
+.card h6 {
+    margin: 0 0.5rem 0.8rem 0.5rem;
+    overflow-wrap: break-word;
+    text-align: center;
+    white-space: normal;
+}
+
+/* <-- LinkedIn Link Base Styling --> */
+.linkedin-link {
+    color: #0077B5;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* <-- Carousel Button Styling --> */
+.carousel-btn {
+    display: none;
+}
+
+/* <-- Container Utility --> */
+.container {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* <-- Carousel Styling --> */
 .carousel {
     margin: 2rem;
-    width: 100%;
     overflow: hidden;
+    width: 100%;
 }
 
+/* <-- Carousel Track Styling --> */
 .carousel-track {
-    display: flex;
     animation: scroll-left 50s linear infinite;
+    display: flex;
 }
 
-/* Add class for reverse direction */
+/* <-- Carousel Track Alternate Animation --> */
 .carousel:nth-child(2) .carousel-track {
     animation: scroll-right 50s linear infinite;
 }
 
+/* <-- Carousel Track Image Styling --> */
 .carousel-track img {
-    padding: 1.5rem;
-    width: auto;
     height: 100px;
     margin-right: 20px;
+    padding: 1.5rem;
+    width: auto;
 }
 
+/* <-- Keyframes: scroll-left --> */
 /* Animation for left movement */
 @keyframes scroll-left {
     0% {
@@ -438,40 +521,91 @@ h5 {
     }
 }
 
-/* Base LinkedIn styles for main team profiles */
+/* <-- LinkedIn Main Profile Styling --> */
 .linkedin-link {
-    text-align: center;
     color: white;
+    display: inline-block;
+    text-align: center;
     text-decoration: none;
     transition: color 0.3s ease;
-    display: inline-block;
 }
 
-/* Hover state for main profile links */
+/* <-- LinkedIn Main Profile Hover --> */
 .linkedin-link:hover {
     color: #005582 !important;
 }
 
-/* Specific styling for links in team member cards */
+/* <-- Team Member Card LinkedIn Styling --> */
 .card .linkedin-link {
     color: #0077b5;
     font-size: smaller;
-    margin-top: auto;
     margin-bottom: 0.25rem;
+    margin-top: auto;
     transition: color 0.3s ease;
 }
 
-/* Hover state for card links */
+/* <-- Team Member Card LinkedIn Hover --> */
 .card .linkedin-link:hover {
     color: #005582;
     font-size: smaller;
 }
 
-/* Specific spacing classes when combined with Bootstrap utilities */
+/* <-- LinkedIn Margin Top 3 Utility --> */
 .linkedin-link.mt-3 {
     margin-top: 1rem;
 }
 
+/* <-- LinkedIn Margin Auto Utility --> */
 .linkedin-link.mt-auto {
     margin-top: auto;
+}
+
+/* <-- MyCard Base Styling --> */
+.mycard {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding-top: 0.15rem;
+}
+
+/* <-- MyCard Full Width Styling --> */
+.mycard {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding-top: 0.15rem;
+    width: 100%;
+}
+
+/* <-- MyCard Text Wrapping --> */
+.mycard h5,
+.mycard h6 {
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* <-- MyCard Transition Effects --> */
+.mycard {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* <-- MyCard Hover Effects --> */
+.mycard:hover {
+    transform: scale(1.1);
+}
+
+/* <-- MyCard Heading 5 --> */
+.mycard h5 {
+    padding: 0.7rem;
+}
+
+/* <-- MyCard Heading 6 --> */
+.mycard h6 {
+    margin: 0 0.5rem 0.8rem 0.5rem;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
