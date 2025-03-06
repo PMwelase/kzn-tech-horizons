@@ -96,6 +96,40 @@
       padding: 10px 0;
       margin: 0;
     }
+
+    /* Custom image sizing for logos/icons */
+    .footer-img {
+      max-width: 80%;
+      height: auto;
+    }
+    .footer-link img {
+      height: 1.5rem;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .text {
+      text-align: left;
+    }
+
+    h3 {
+      margin-bottom: 2dvb;
+    }
+
+    .hero {
+      padding-left: 5rem;
+    }
+
+    .bg {
+      background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+    }
+
+    .head {
+      font-weight: 600;
+    }
+
+
+
   </style>
 </head>
 <body>
@@ -152,26 +186,36 @@
         <h2>Our Sponsors</h2>
         <p>We are grateful for the support of our amazing sponsors. Their contributions help us achieve our mission.</p>
         <div class="container">
-          <div class="row text-center">
+          <div class="row text-center d-flex align-items-left justify-content-center">
             <div class="col-md-3 mb-3">
-              <img src="/images/sponsor-05.png" class="img-fluid sponsor-img" alt="Sponsor 5">
+              <a href="https://www.linkedin.com/company/asante-tech-solultions/">
+                <img src="/images/sponsor-05.png" class="img-fluid sponsor-img" alt="asante-solutions">
+              </a>  
             </div>
             <div class="col-md-3 mb-3">
-              <img src="/images/sponsor-02.png" class="img-fluid sponsor-img" alt="Sponsor 2">
+              <a href="https://www.linkedin.com/company/moses-kotane-research-institute/">
+                <img src="/images/sponsor-02.png" class="img-fluid sponsor-img" alt="moses-kotane">
+              </a>
             </div>
             <div class="col-md-3 mb-3">
-              <img src="/images/sponsor-03.png" class="img-fluid sponsor-img" alt="Sponsor 3">
+              <a href="https://www.linkedin.com/company/zaiotech">
+                <img src="/images/sponsor-03.png" class="img-fluid sponsor-img" alt="zaio institute">
+              </a>
             </div>
           </div>
-          <div class="row text-center">
+          <div class="row text-left d-flex align-items-left justify-content-center">
             <div class="col-md-3 mb-3">
-              <img src="/images/sponsor-01.png" class="img-fluid sponsor-img" alt="Sponsor 1">
+              <img src="/images/sponsor-01.png" class="img-fluid sponsor-img" alt="sk-computers">
             </div>
             <div class="col-md-3 mb-3">
-              <img src="/images/sponsor-04.png" class="img-fluid sponsor-img" alt="Sponsor 4">
+              <a href="https://www.linkedin.com/company/dream-big-stay-humble/">
+                <img src="/images/sponsor-04.png" class="img-fluid sponsor-img" alt="dream-big-stay-humble">
+              </a>
             </div>
             <div class="col-md-3 mb-3">
-              <img src="/images/sponsor-07.png" class="img-fluid sponsor-img" alt="Sponsor 7">
+              <a href="https://www.linkedin.com/company/jci-durban/">
+                <img src="/images/sponsor-07.png" class="img-fluid sponsor-img" alt="jci-durban">
+              </a>
             </div>
           </div>
         </div>
@@ -179,17 +223,14 @@
       
     </div>
   </section>
-  
-  <footer class="text-center p-3 bg-dark text-white" id="contact">
-    <div id="footer-container"></div>
-</footer>
-  
-<div id="copyright-container"></div>
+
+
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/footer.js"></script>
+  <script src="js/foot.js"></script>
   <script src="js/copyright.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <div id="copyright-container"></div>
 </body>
 </html>

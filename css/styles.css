@@ -301,7 +301,7 @@ h5 {
 /* <-- Socials Image Styling --> */
 .socials img {
     height: 2rem;
-    margin: 1.2rem;
+    margin: 0.5rem;
     transition: transform 0.3s ease-in-out;
     width: auto;
 }
@@ -609,3 +609,4 @@ h5 {
     overflow-wrap: break-word;
     white-space: normal;
 }
+
